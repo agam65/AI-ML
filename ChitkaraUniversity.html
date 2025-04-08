@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1518716b900590f27e58f2a85653ac99 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1518716b900590f27e58f2a85653ac99" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1518716b900590f27e58f2a85653ac99 = L.map(
+                "map_1518716b900590f27e58f2a85653ac99",
+                {
+                    center: [30.516459, 76.65921],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6f12d9cfacd96d9338e3afaeeb494d96 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6f12d9cfacd96d9338e3afaeeb494d96.addTo(map_1518716b900590f27e58f2a85653ac99);
+        
+    
+            var circle_marker_fc505d1b7ab58f6965fc0712489b52d6 = L.circleMarker(
+                [30.69236, 76.71081],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1518716b900590f27e58f2a85653ac99);
+        
+    
+        var popup_45fd9c839af21c43338bb8ba47ea7152 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_538c0f25b0debac4b45c26d6e04b1690 = $(`<div id="html_538c0f25b0debac4b45c26d6e04b1690" style="width: 100.0%; height: 100.0%;">Homeland</div>`)[0];
+                popup_45fd9c839af21c43338bb8ba47ea7152.setContent(html_538c0f25b0debac4b45c26d6e04b1690);
+            
+        
+
+        circle_marker_fc505d1b7ab58f6965fc0712489b52d6.bindPopup(popup_45fd9c839af21c43338bb8ba47ea7152)
+        ;
+
+        
+    
+    
+            var circle_marker_5fc2b61c66f67edc6c21e3f82573fbd4 = L.circleMarker(
+                [30.64036, 76.81561],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1518716b900590f27e58f2a85653ac99);
+        
+    
+        var popup_1aeaf9289bf213a00360b2d5922a7cc4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0df18902a18b8e3ddb9acfd8744178f6 = $(`<div id="html_0df18902a18b8e3ddb9acfd8744178f6" style="width: 100.0%; height: 100.0%;">Sunrise Complex</div>`)[0];
+                popup_1aeaf9289bf213a00360b2d5922a7cc4.setContent(html_0df18902a18b8e3ddb9acfd8744178f6);
+            
+        
+
+        circle_marker_5fc2b61c66f67edc6c21e3f82573fbd4.bindPopup(popup_1aeaf9289bf213a00360b2d5922a7cc4)
+        ;
+
+        
+    
+    
+            var circle_marker_a16a459a24e06def7b597eebd342dab1 = L.circleMarker(
+                [30.63332, 76.82709],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1518716b900590f27e58f2a85653ac99);
+        
+    
+        var popup_47aa84cc463b79dd69120bcac0d5eddb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e06df3f79914f8fc8e6b1be43f236aaa = $(`<div id="html_e06df3f79914f8fc8e6b1be43f236aaa" style="width: 100.0%; height: 100.0%;">Motiaz Royal Citi</div>`)[0];
+                popup_47aa84cc463b79dd69120bcac0d5eddb.setContent(html_e06df3f79914f8fc8e6b1be43f236aaa);
+            
+        
+
+        circle_marker_a16a459a24e06def7b597eebd342dab1.bindPopup(popup_47aa84cc463b79dd69120bcac0d5eddb)
+        ;
+
+        
+    
+    
+            var circle_marker_48dfdbf5253376c62ce401f608011b9f = L.circleMarker(
+                [30.71703, 76.65357],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1518716b900590f27e58f2a85653ac99);
+        
+    
+        var popup_b0197a2a65b2ee3d3ba2a52771c8acc8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dcb5a80cbe2aeb6b6c48ac3fb935bc26 = $(`<div id="html_dcb5a80cbe2aeb6b6c48ac3fb935bc26" style="width: 100.0%; height: 100.0%;">World High Street</div>`)[0];
+                popup_b0197a2a65b2ee3d3ba2a52771c8acc8.setContent(html_dcb5a80cbe2aeb6b6c48ac3fb935bc26);
+            
+        
+
+        circle_marker_48dfdbf5253376c62ce401f608011b9f.bindPopup(popup_b0197a2a65b2ee3d3ba2a52771c8acc8)
+        ;
+
+        
+    
+    
+            var circle_marker_db39eb6f168b220d3071511ae6085b3b = L.circleMarker(
+                [30.72579, 76.65119],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1518716b900590f27e58f2a85653ac99);
+        
+    
+        var popup_1bd0162657ae1e7660638210554273a8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e1a6a4cc7c6ab1b4fdbcf6ba64ace688 = $(`<div id="html_e1a6a4cc7c6ab1b4fdbcf6ba64ace688" style="width: 100.0%; height: 100.0%;">Golden Homes</div>`)[0];
+                popup_1bd0162657ae1e7660638210554273a8.setContent(html_e1a6a4cc7c6ab1b4fdbcf6ba64ace688);
+            
+        
+
+        circle_marker_db39eb6f168b220d3071511ae6085b3b.bindPopup(popup_1bd0162657ae1e7660638210554273a8)
+        ;
+
+        
+    
+    
+            var circle_marker_25655ff828e99d785587b8762cf85466 = L.circleMarker(
+                [30.73728, 76.64937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1518716b900590f27e58f2a85653ac99);
+        
+    
+        var popup_d9271a495057d51eabf9b18b8d622c4f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2ae8d47f41ff9e5d69b153aa4fed1710 = $(`<div id="html_2ae8d47f41ff9e5d69b153aa4fed1710" style="width: 100.0%; height: 100.0%;">Gillco Heights</div>`)[0];
+                popup_d9271a495057d51eabf9b18b8d622c4f.setContent(html_2ae8d47f41ff9e5d69b153aa4fed1710);
+            
+        
+
+        circle_marker_25655ff828e99d785587b8762cf85466.bindPopup(popup_d9271a495057d51eabf9b18b8d622c4f)
+        ;
+
+        
+    
+    
+            var feature_group_2b96d7561dea601d0d2548128d1423bd = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_2b96d7561dea601d0d2548128d1423bd.addTo(map_1518716b900590f27e58f2a85653ac99);
+        
+    
+            var marker_6adfea147fa7b21bd419ed20e47c33e0 = L.marker(
+                [30.516459, 76.65921],
+                {}
+            ).addTo(map_1518716b900590f27e58f2a85653ac99);
+        
+    
+        var popup_02db093ebf45b6ecbd00baa95c2b6c2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0276ab8af3a2c624732e7d85895156e = $(`<div id="html_b0276ab8af3a2c624732e7d85895156e" style="width: 100.0%; height: 100.0%;">Chitkara University</div>`)[0];
+                popup_02db093ebf45b6ecbd00baa95c2b6c2c.setContent(html_b0276ab8af3a2c624732e7d85895156e);
+            
+        
+
+        marker_6adfea147fa7b21bd419ed20e47c33e0.bindPopup(popup_02db093ebf45b6ecbd00baa95c2b6c2c)
+        ;
+
+        
+    
+</script>
+</html>
